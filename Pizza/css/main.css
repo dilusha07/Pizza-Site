@@ -1,0 +1,192 @@
+.wrapper{
+  background-color: black;
+}
+
+*{
+    
+    padding: 0;
+    margin:0;
+}
+
+/* The dots/bullets/indicators */
+.dotclass{  
+    position: absolute;
+    top:600px;
+    left:50%;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  .slideshow-container {    
+    position: relative;  
+    margin-top: 0px;
+    
+  }
+
+ .mySlides img{
+   width:100%;
+   height:650px;
+   z-index: -1;
+ } 
+
+
+ 
+.topnav{      
+    text-align: center;   
+    width: 100%;
+    display: inline-flex;    
+}
+
+.topnav nav  {
+    margin-top:10px;
+    left:60%;
+    position: absolute;
+    padding-left: 10px;    
+}
+.topnav nav a:hover{
+    text-decoration: underline;
+    
+}
+
+.topnav h2 em a:hover{
+    text-decoration: underline;
+}
+
+
+.topnav nav  a{
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    font-size: 16px;
+    display: inline;
+}
+.topnav h2 em{
+    left:30%;
+    display: inline; 
+    font-size: 32px;; 
+    margin-right: 10px;
+   position: absolute;  
+}
+/*Welcome text */
+.centertext{
+    top:300px;
+    left:35%;
+    color: white;
+   position: absolute;
+   text-align: center;
+   z-index: 0;
+}
+
+/*WHO WE ARE SECTION */
+.center{
+  margin-top: 15px;
+  margin-left: 120px;  
+  width: 75%;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Arial;
+  text-align: center;
+ 
+}
+.center img{
+    display: inline-block;
+}
+section {
+    display: inline-block; 
+    color: #717171;   
+}
+
+
+
+
+
+/*For Menu Part */
+.bottom{
+    margin-top: 35px;
+    position: relative;
+}
+
+.sticky {
+    position: fixed;
+    top: 0px;  
+    height:48px;
+    width: 100%;  
+    z-index: 1;    
+   }
+
+.bottom .text-block {
+    position: absolute;
+    left:50px; 
+    top:20px;   
+    right: 50px;  
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+.bottom .text-block  table tr td:hover{
+    transform: scale(1.2); 
+}
+
+#empty{
+    width:360px;
+}  
+#one{
+    font-weight: bold;
+}
+#two{
+    font-size: 22px;
+}
+ #three{
+  font-size: 10px;
+  
+}
+ #four{
+    font-size: 10px;
+}
+
+footer{
+ 
+    width: 100%;
+    height: 75px;
+    color: white;
+    background-color: black;
+    margin-top: 0px;
+    
+}
+.copy-center{
+float: center; 
+padding-left: 110px;
+margin-left: 30%;
+}
+footer a{
+text-decoration: none;
+padding-left: 10px;
+padding-bottom: 0px;
+padding-top: 10px;
+margin-top: 0px;
+}
+
+.copy-left{
+  padding-left: 30px;
+  padding-top: 0px;
+}
+.copy-right{
+  margin-right: 70px;
+
+}
+
+
+
+
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Order Bruno's Pizzeria </title>
+    <link rel="stylesheet" type="text/css" href="css/order.css">
+    <script src="js/order.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <style>
+  
+   </style>
+   <div class="wrapper">
+    <div id="x"  class="sticky" >
+      <div  class="topnav">
+        <h2><em><a href="index.html" style="text-decoration: none;color:white;">Bruno's Pizzeria</a> </em></h2>
+    <nav>
+        <a href="">Order Now</a>
+        <a href="">Register</a>
+        <a href="">Features</a>
+    </nav>
+  </div>
+
+    </div>
+    <div  class="topnav">
+        <h2><em style="color:white;"> Bruno's Pizzeria </em></h2>
+    <nav>
+        <a href="">Order Now</a>
+        <a href="">Register</a>
+        <a href="">Features</a>
+    </nav>
+  </div>
+</div>
+  
+  <div class="image-container">
+  <img src="images/bg-image1.jpg" >
+  </div>
+
+          <div class="centertext">
+            <em style=" font-size: 40px;"> Welcome to Bruno's Pizzeria  </em><br>
+             <em style=" font-size: 24px;">  Order delicious pizza today </em> 
+          </div> 
+
+
+          <section>
+            <table> 
+                <tr>
+                    <td>
+                        <h3>Pickup or Delivery</h3><br>
+                        Pickup<input style="width: 16px;height:18px" type="radio" name="deliveryoption" id="pickup"><br>
+                        Delivery <input style="width: 16px;height:18px"  type="radio" name="deliveryoption" id="delivery" onchange="deliveryfunc()"><br><br><br>
+                        <h3>Your Pizza Order</h3><br>
+                        <input type="text" name="pizzasize" id="pizzasize"> <br>
+                        <div id="deliveryinfo">
+                            <h3>Delivery Address</h3>
+                            <label >Address</label><br>
+                            <input type="text" name="deliveryAddress" id="deliveryAddress"> <br>
+                            <label >Suburb</label><br>
+                            <input type="text" name="deliverySuburb" id="deliverySuburb"> <br>
+                            <label >Postal Code</label><br>
+                            <input type="text" name="deliveryPCode" id="deliveryPCode"> <br>
+                        </div>
+                        <br><br>
+                        <h3>Pay Online or on pickup?</h3><br>
+                        <input type="radio" name="payPickup" id="payPickup" value="payPickup">Pickup <br>
+                        <input type="radio" name="payPickup" id="payonline" value="payOnline" onclick="onlinepayment()">Online <br>
+                    </td>
+                    <td>
+                        <h3>Customer Details</h3><br>
+                        <label >Name</label><br>
+                        <input type="text" name="name" id="name"><br><br>
+                        <label >Email</label><br>
+                        <input type="email" name="email" id="email"><br><br>
+                        <label >Contact Number</label><br>
+                        <input type="number" name="cnum" id="cnum"><br><br>
+                        <br>
+                        <h3>Billing Address</h3><br>
+                        Same as delivery address? <br><br>
+                        <label>Yes</label>     <input style="width: 14px;height:16px; padding-left:5px ;" type="radio" name="addressyesno" id="addressyes" onclick="copydelitobilladd()"><br>
+                        <label>No</label>     <input style="width: 14px;height:16px; padding-left:5px ;" type="radio" name="addressyesno" id="addressno"><br><br>
+                        <label >Address</label><br>
+                        <input type="text" name="billaddress1" id="billaddress1"><br><br>
+                        <label >Suburb</label><br>
+                        <input type="text" name="suburb1" id="suburb1"><br><br>
+                        <label >Postal Code</label><br>
+                        <input type="number" name="postcode1" id="postcode1">  <br>
+                        <div id="payment">
+                            <h3>Payment Information</h3>
+                            <label >Full Name</label> <br>
+                            <input type="text" name="fullname" id="fullname">  <br>
+                            <label >Credit Card</label> <br>
+                            <input type="number" name="creditcard" id="creditcard"> <br>
+                            <label>Expiry</label><br>
+                            <input type="month" id="month" name="month"><br>                          
+                            <label>CCV</label><br>
+                            <input type="text" name="ccv" id="ccv">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <button onclick="submitdetails()">Send Order</button>
+        </section>
+         
+ 
+   
+        <footer>
+    
+     <div class="copy-center">
+     <a href="#" class="fa fa-facebook" style="font-size: 16px;"></a>
+     <a href="#" class="fa fa-twitter" style="font-size: 16px;"></a>
+     <a href="#" class="fa fa-google" style="font-size: 16px;"></a>
+     </div>
+     <div class="rights">
+     <div class="copy-left">
+     <p  style="font-size: 16px;">@2020 Bruno's Pizzeria</p>
+   </div>
+     <div class="copy-right">
+       <label  style="font-size: 16px; float: right;">Created by Dilusha</label>
+     </div>
+     </div>
+   </footer>
+
+
+          
+        </footer> 
+   
+    
+   
+   
+
+
+ 
+  
+   
+
+
+   
+
+<script>
+
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+ 
+  if(window.scrollY==0){
+      document.getElementById("x").style.backgroundColor="transparent";
+    
+    
+     console.log(window.scrollY)
+     
+  }
+  else{
+    console.log(window.scrollY)
+   
+
+    document.getElementById("x").style.backgroundColor="#31010a";
+    
+  }
+}
+
+</script>
+</body>
+</html>
